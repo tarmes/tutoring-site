@@ -8,20 +8,16 @@ import {
   NavbarBrand
 } from 'reactstrap';
 
+import styled from 'styled-components'
+
+const Styles = styled.div`
+`
+
 
 export default function NavBar() {
     return (
-        // <nav>
 
-        //     <nav>
-        //         <button>About</button>
-        //         <button>Sign-Up</button>
-        //         <button>Contact</button>
-        //     </nav>
-        // </nav>
-
-
-        <div>
+        <Styles>
             <Navbar color="dark" dark expand="md">
                 <NavbarBrand href="#home">
                     <img
@@ -38,14 +34,14 @@ export default function NavBar() {
                         <NavLink tag={Link} to='/'>Go home!</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink tag={Link} to='/'>About</NavLink>
+                        <NavLink tag={Link} to='/about'>About</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink tag={Link} to='/'>Contact</NavLink>
+                        <NavLink tag={Link} to='/contact'>Contact</NavLink>
                     </NavItem>
                 </Nav>
             </Navbar>
-</div>
+        </Styles>
         
     )
 }

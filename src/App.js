@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar'
 import Welcome from './components/Welcome'
+import About from './components/About'
+import Contact from './components/Contact'
 import { Route } from 'react-router-dom';
 
 
@@ -14,6 +16,14 @@ function App() {
     
       <Route exact path='/'>
         <Welcome />
+      </Route>
+
+      <Route path='/about'>
+        <About />
+      </Route>
+
+      <Route path='/contact'>
+        <Contact />
       </Route>
     </div>
   );
