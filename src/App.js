@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar'
-import Welcome from './components/Welcome'
-import About from './components/About'
-import Contact from './components/Contact'
+import Welcome from './components/pages/Welcome'
+import About from './components/pages/About'
+import Contact from './components/pages/Contact'
 import { Route } from 'react-router-dom';
 
 
